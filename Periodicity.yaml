@@ -1,0 +1,12 @@
+title: Periodicity
+x-stoplight:
+  id: 0l4fsysv3vldd
+type: string
+description: Available periodicities
+enum:
+  - HOUR
+  - WEEK
+  - DAY
+  - MONTH
+  - YEAR
+example: DAY

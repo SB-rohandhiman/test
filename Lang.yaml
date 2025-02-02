@@ -1,0 +1,7 @@
+title: Lang
+x-stoplight:
+  id: ds5dvck2mxhr0
+type: string
+description: Locale identifier
+format: '[a-z]{2}_[A-Z]{2}'
+example: fr_FR

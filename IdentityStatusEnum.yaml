@@ -1,0 +1,11 @@
+title: IdentityStatusEnum
+x-stoplight:
+  id: f2p26flow35yb
+type: string
+enum:
+  - INITIATED
+  - PENDING
+  - OPENED
+  - BLOCKED
+  - CLOSED
+  - INIBLOCKED

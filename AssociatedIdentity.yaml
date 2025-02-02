@@ -1,0 +1,47 @@
+title: AssociatedIdentity
+x-stoplight:
+  id: zlrjvuy1loh2z
+type: object
+readOnly: true
+required:
+  - id
+  - name
+  - legalType
+properties:
+  id:
+    $ref: ./IdentityId.yaml
+    x-stoplight:
+      id: v9hkmbylpq75g
+  name:
+    type: string
+    description: Displayable name of the associated party
+    x-stoplight:
+      id: qm3q65ck9lbkl
+  legalType:
+    $ref: ./LegalType.yaml
+    x-stoplight:
+      id: 7pdmpociyhnlt
+  links:
+    type: array
+    readOnly: true
+    description: |
+      Can contain the following actions (identified by their `rel` attribute):
+        * `getAssociatedPartyKycRequirements` [GET] Get the associated party informations
+        * `getAssociatedPartyDocumentsRequirements` [GET] Get the associated party documents requirements
+        * `updateAssociatedParty` [PATCH] Update the associated party informations
+        * `addDocumentToAssociatedParty` [POST] Add a new document to associated party
+    items:
+      $ref: ./Link.yaml
+      x-stoplight:
+        id: lw8w3cvvmx7wi
+    example:
+      - rel: getAssociatedPartyKycRequirements
+        href: 'https://sandbox.skaleet.com/api/company/v1/kyc?legalType=NATURAL_PERSON'
+      - rel: getAssociatedPartyDocumentsRequirements
+        href: 'https://sandbox.skaleet.com/api/company/v1/kyc/documents?legalType=NATURAL_PERSON'
+      - rel: updateAssociatedParty
+        href: 'https://sandbox.skaleet.com/api/company/v1/identities/42'
+      - rel: addDocumentToAssociatedParty
+        href: 'https://sandbox.skaleet.com/api/company/v1/identities/42/documents'
+    x-stoplight:
+      id: oaucq88es5880

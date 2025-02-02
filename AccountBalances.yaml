@@ -1,0 +1,52 @@
+title: AccountBalances
+x-stoplight:
+  id: rfekbwvwcbkql
+type: object
+required:
+  - accountId
+  - balance
+  - availableBalance
+properties:
+  accountId:
+    $ref: ./AccountNumber.yaml
+    x-stoplight:
+      id: qddsgzhfepro9
+  balance:
+    allOf:
+      - $ref: ./Amount.yaml
+        x-stoplight:
+          id: adj5xirl10a7u
+      - readOnly: true
+        x-stoplight:
+          id: 6520b5a895wqo
+      - description: Account's balance
+        x-stoplight:
+          id: 7y6tw496i70ih
+    x-stoplight:
+      id: 0py6rt14wxn38
+  availableBalance:
+    allOf:
+      - $ref: ./Amount.yaml
+        x-stoplight:
+          id: hux7yvehj7db9
+      - readOnly: true
+        x-stoplight:
+          id: e0745mz2uj52j
+      - description: 'Account''s balance, minus all reserved funds'
+        x-stoplight:
+          id: zbihwcph9care
+    x-stoplight:
+      id: 8nucb5mf1xn6m
+  balanceByValueDate:
+    allOf:
+      - $ref: ./Amount.yaml
+        x-stoplight:
+          id: 5pzi05cjuz9ee
+      - readOnly: true
+        x-stoplight:
+          id: kjpximqcpf7jg
+      - description: 'Account''s balance, calculated by value date'
+        x-stoplight:
+          id: wt8yzp36lxgdp
+    x-stoplight:
+      id: f9jtu693ah3gr

@@ -1,0 +1,11 @@
+title: VelocityCalendarPeriodicity
+x-stoplight:
+  id: z0yfne0ev65ea
+type: string
+enum:
+  - DAY
+  - WEEK
+  - MONTH
+  - YEAR
+  - SEMESTER
+  - TRIMESTER

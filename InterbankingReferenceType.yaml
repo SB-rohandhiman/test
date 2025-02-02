@@ -1,0 +1,13 @@
+title: Interbanking Reference type
+x-stoplight:
+  id: w5tp731znsdde
+type: string
+description: Type of the interbanking reference
+enum:
+  - IBAN
+  - ACCOUNT_NUMBER
+  - ACCOUNT_REFERENCE
+  - VISA_NUMBER
+  - PHONE
+  - OTHER
+example: IBAN

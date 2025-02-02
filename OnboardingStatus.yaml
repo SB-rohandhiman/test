@@ -1,0 +1,11 @@
+title: OnboardingStatus
+x-stoplight:
+  id: qsoms3xe6d2ix
+type: string
+readOnly: true
+description: Onboarding status
+enum:
+  - INITIATED
+  - COMPLETION_PENDING
+  - READY_TO_SUBMIT
+  - SUBMITTED

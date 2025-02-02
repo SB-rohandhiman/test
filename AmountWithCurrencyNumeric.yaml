@@ -1,0 +1,19 @@
+title: 'Amount [deprecated] [currency numeric]'
+x-stoplight:
+  id: g7dc2bz4e2em8
+type: object
+required:
+  - value
+  - currency
+properties:
+  value:
+    type: integer
+    example: 1337
+    description: Amount without separator and symbol
+    readOnly: true
+    x-stoplight:
+      id: uy1re45q77sbh
+  currency:
+    $ref: ./CurrencyNumeric.yaml
+    x-stoplight:
+      id: 7gl2zhvrpq80w

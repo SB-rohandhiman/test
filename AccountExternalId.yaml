@@ -1,0 +1,6 @@
+title: AccountExternalId
+x-stoplight:
+  id: pux1za046qlmf
+type: string
+description: Banking account external identifier (from the calling system).
+example: EXT123456789

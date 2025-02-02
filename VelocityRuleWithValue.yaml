@@ -1,0 +1,15 @@
+title: VelocityRuleWithValue
+x-stoplight:
+  id: tj7x95k5sa60m
+oneOf:
+  - $ref: ./VelocityRuleWithAmountLimitAndValue.yaml
+    x-stoplight:
+      id: 7pwcckgv2mcu5
+  - $ref: ./VelocityRuleWithTransactionNumberLimitAndValue.yaml
+    x-stoplight:
+      id: 1phk5pgopdqr2
+discriminator:
+  propertyName: limitType
+  mapping:
+    amount: ./VelocityRuleWithAmountLimitAndValue.yaml
+    transactions: ./VelocityRuleWithTransactionNumberLimitAndValue.yaml

@@ -1,0 +1,42 @@
+title: RecipientAddress
+x-stoplight:
+  id: iapkk4xhchhkm
+type: object
+description: either address line or structured address required
+properties:
+  addressLines:
+    type: string
+    example: 1 rue de la paix 75001 Paris
+    x-stoplight:
+      id: 6gg8bjky6rd35
+  structuredAddress:
+    type: object
+    properties:
+      streetName:
+        type: string
+        example: 62 Glenthorne Rd
+        x-stoplight:
+          id: if5cc4fvruqr1
+      buildingNumber:
+        type: string
+        example: '1'
+        x-stoplight:
+          id: h72w5v07bjuuj
+      postCode:
+        type: string
+        example: W6 0LR
+        x-stoplight:
+          id: we1i928a7otky
+      townName:
+        type: string
+        example: London
+        x-stoplight:
+          id: btzv0dcm316dm
+    x-stoplight:
+      id: tzd9eunxso2qn
+  country:
+    description: country ISO code
+    example: '826'
+    type: string
+    x-stoplight:
+      id: uekogny31pwpe
